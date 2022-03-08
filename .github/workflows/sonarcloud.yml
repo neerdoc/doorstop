@@ -36,11 +36,7 @@ jobs:
         run: make test
 
       - name: Calculate coverage
-        run: |
-          ls
-          pwd
-          coverage xml
-          cat coverage.xml
+        run: coverage xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
