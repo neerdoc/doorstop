@@ -578,5 +578,5 @@ def _matrix_latex(table, path):
         traceability.append(row_text)
         traceability.append(HLINE)
     # End the table.
-    traceability.append("\\end{longtable}")
+    traceability.append("END_LONGTABLE)
     common.write_lines(traceability, file, end=settings.WRITE_LINESEPERATOR)
